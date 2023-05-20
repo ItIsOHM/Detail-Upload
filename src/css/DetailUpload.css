@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(90deg, #1a1a1a, #000000);
+    background-size:400%, 400%;
+    animation: gradient 5s ease infinite;
+    overflow: hidden;
+    font-family: 'Montserrat';
+    
+}
+  
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+  
+    50% {
+        background-position: 100% 50%;
+    }
+  
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+}
+.main {
+    /* text-align: center; */
+    font-size: 45px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.subheading{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+}
+
+.loginArea,  .uploadArea, .retrieveArea {
+    position: relative;
+    top : 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.retrieveArea {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+.button {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    
+}
+
+.button:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button, .color {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
